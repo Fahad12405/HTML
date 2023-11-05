@@ -1,86 +1,286 @@
 <html>
-    <head>
-        <title>FORMS</title>
-    </head>
-    <body>
-    <center><table border="2"cellspacing="3" cellpadding="20" >
-                <tr>
-                     <th  width="500">Student Registration Form</th>
-                </tr>
-            </table></center>
-            <br>
-            <br>
-            <form action="form submit.html">
-                
-                Name : 
-                <input type="text" placeholder="Enter Full Name" name="Name" />
-                <br>
-                <br>
-                Father's Name :
-                <input type="text" placeholder="Enter Father Name" name="Father Name" />
-                <br>
-                <br>
-                Mother's Name :
-                <input type="text" placeholder="Enter Mother Name" name="Mother Name" />
-                <br>
-                <br>
-                Phone Number :
-                <input required type="text" placeholder="Enter Your Number" name="Number" maxlength="11" />
-                <br>
-                <br>
-                Email :
-                <input required type="email" placeholder="Enter Your Mail" name="Mail" />
-                <br>
-                <br>
-                    Gender:  <br />
-                    <input type="radio" name="gender" value="Male"  /> Male 
-                    <input type="radio" name="gender" value="Female" />Female
-                    <input type="radio" name="gender" value="Other" />  Other 
-                <br>
-                <br> 
-                Date of Birth :
-                 <input  placeholder="DOB" type="date" name="DOB" />
-                 <br>
-                 <br>
-                Address :
-                 <input required placeholder="Address" type="text" name="Address" size="50" />  
-                 <br>
-                 <br>
-                 Blood Group 
-                    <select name="blood group">  
-                      <option value="A+">A+</option>
-                      <option value="AB+">AB+</option>
-                      <option value="B+">B+</option>
-                      <option value="B-">B-</option>
-                      <option value="A-">A-</option>
-                      </select> 
-                      <br>
-                <br>
-                    Department:  
-                    <input type="radio" name="Department" value="CSE"  /> CSE 
-                    <input type="radio" name="Department" value="EEE" />EEE
-                    <input type="radio" name="Department" value="BBA" />  BBA
-                    <br /> 
-                    <br /> 
-                    Course:
-                        <input type="checkbox" name="Course"   value="C"  />   C
-                         <input type="checkbox" name="Course"   value="C++" />   C++ 
-                        <input type="checkbox" name="Course"   value="Java Script" />  Java Script
-                        <input type="checkbox" name="Course"   value="AI"  />  AI 
-                        <input type="checkbox" name="Course"   value="Machine Learning"  />  Machine Learning
-                        <input type="checkbox" name="Course"   value="Robotics"  />   Robotics
-                    <br>
-                    <br>
-                    Photo:
-                     <input type="file" name="pic" /><br>
-                     <br>
-                     <br>
-                     
-                     <input type="submit" value="submit" />
-                      
+<head>
+<title>
+      Table  
+</title>
+</head>
+<body>
+    <table border="5">
+        <tr>
+            <th rowspan="2"> Heading </th>
+            <th> Student </th>
+            <th colspan="3"> Detail  </th>
+        </tr> 
+        <th> ID</th> 
+        <th>Name</th>
+        <th>Department</th>
+        <th>Roll Number</th>
+        <tr>
+            <td rowspan="4"> Student List</td>
+            <td>1</td>
+            <td>Victor</td>
+            <td>Computer Science</td>
+            <td>12345</td>
+        </tr>    
+        <tr>
+            <td>2</td>
+            <td>William</td>
+            <td>Electronics</td>
+            <td>23456</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Harry</td>
+            <td>Electrical</td>
+            <td>34567</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Rick</td>
+            <td>Civil</td>
+            <td>45678</td>
+        </tr>
+    </table> 
+    <table border="5">
+        <tr>
+            <th rowspan="11"><b>TCB</b></th>
+            <th><b>Order no:</b></th>
+            <td colspan="3">#ABC001</td>
+            
+            
+        </tr>
+        <tr>
+            <th>Order Date:</th>
+            <td colspan="3">23-March-2016</td>
+            
+        </tr>
+        <tr>
+            <th colspan="4"><center>Customer</center></th>
+        </tr>
+        <tr>
+            <th>Name:</th>
+            <td colspan="3">John Papas</td>
+        </tr>
+        <tr>
+            <th>Address:</th>
+            <td colspan="3">Independence Day 5th str,11511</td>
+        </tr>
+        <tr>
+            <th colspan="4">Order Details</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Of Mice And Men</td>
+            <td>Book</td>
+            <td>10.00$</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Les Miserable</td>
+            <td>Book</td>
+            <td>12.00$</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Game Of Thrones-S01</td>
+            <td>DVD</td>
+            <td>50.00$</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Samsung Galaxy</td>
+            <td>Mobile Phone</td>
+            <td>200.00$</td>
+        </tr>
+        <tr>
+            <th colspan="3"> <blockquote align="right">Total</blockquote></th>
+            <td>272.00$</td>
+        </tr>
+    </table>  
+    <h1><center><u>Employee Details</u></center></h1>
+    <table bgcolor="pink" border="50"  >
+            <tr bgcolor="blood red">
+                <th></th>
+                <th colspan="2">Software</th>
+                <th colspan="2">Hardware</th>
+                <th colspan="2">Marketing</th>
+                <th colspan="2">HR</th>
+                <th colspan="3">Others</th>
 
 
-            </form>
-       
-    </body>
+            </tr>
+            <tr bgcolor="red">
+                <th>Department</th>
+                <th>.NET</th>
+                <th>JAVA</th>
+                <th>Embedded</th>
+                <th>Mechanical</th>
+                <th>Indoor</th>
+                <th>Outdoor</th>
+                <th>Onside</th>
+                <th>Offside</th>
+                <th>Accounts</th>
+                <th>Asset</th>
+                <th>Canteen</th>
+
+
+
+
+            </tr>
+            <tr>
+                <td>Head Person</td>
+                <td>John</td>
+                <td>Disuja</td>
+                <td>Kartik</td>
+                <td>Gary</td>
+                <td>Sreja</td>
+                <td>Divya</td>
+                <td>Sandesh</td>
+                <td>Krutika</td>
+                <td>P.Roy</td>
+                <td>Mohan</td>
+                <td>Joggy</td>
+
+             </tr>
+             <tr>
+                <td>Experience (in years) </td>
+                <td>17</td>
+                <td>12</td>
+                <td>8</td>
+                <td>7</td>
+                <td>12</td>
+                <td>11</td>
+                <td>5</td>
+                <td>9</td>
+                <td>7</td>
+                <td>12</td>
+                <td>5</td>
+             </tr>
+             <tr>
+                <td>No of Teams</td>
+                <td>5</td>
+                <td>5</td>
+                <td>7</td>
+                <td>7</td>
+                <td>3</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+             </tr>
+             <tr>
+                <td>Assigned Project</td>
+                <td>18</td>
+                <td>15</td>
+                <td>7</td>
+                <td>11</td>
+                <td>5</td>
+                <td>5</td>
+                <td>2</td>
+                <td>2</td>
+                <td>4</td>
+                <td>10</td>
+                <td>6</td>
+             </tr>
+             <tr>
+                <td>No Of employees</td>
+                <td>182</td>
+                <td>150</td>
+                <td>75</td>
+                <td>82</td>
+                <td>34</td>
+                <td>25</td>
+                <td>2</td>
+                <td>5</td>
+                <td>4</td>
+                <td>10</td>
+                <td>6</td>
+             </tr>
+             <tr>
+                <td>Weekly Standup</td>
+                <td>Monday</td>
+                <td>Monday</td>
+                <td>Friday</td>
+                <td>Friday</td>
+                <td>Tuesday</td>
+                <td>Tuesday</td>
+                <td>Everyday</td>
+                <td>Everyday</td>
+                <td>Friday</td>
+                <td>Friday</td>
+                <td>Friday</td>
+             </tr>
+             <tr>
+                <td>Apprisial Month</td>
+                <td>March</td>
+                <td>March</td>
+                <td>March</td>
+                <td>March</td>
+                <td>June</td>
+                <td>June</td>
+                <td>March</td>
+                <td>March</td>
+                <td>June</td>
+                <td>June</td>
+                <td>June</td>
+             </tr>
+
+            
+
+
+    </table>
+    <h1><blockquote><u><em>A Complex table</em></u></blockquote></h1>
+    <table border="6">
+        <tr>
+            <th colspan="2">Invoice #123456789</th>
+            <th colspan="2">14 January 2025</th>
+            
+
+         </tr>
+        "<tr>
+            <td>Pay to: <br>Aeme Billing CO. <br>123 Main St.<br>Cityville, NA 12345</td>
+            <td colspan="3"> Costumer:<br>John Smith<br>321 Willow Way<br>Southeast Northwestershire, MA 54321</td>
+          </tr>
+          
+            
+          <tr>
+            <th>Name/Description</th>
+            <th>Qty.</th>
+            <th>@</th>
+             <th>Cost</th>
+
+         </tr>
+         <tr>
+            <td>Paperlines</td>
+            <td>1000</td>
+            <td>0.01</td>
+            <td>10.00</td>
+          </tr>
+          <tr>
+            <td>Staples (box)</td>
+            <td>100</td>
+            <td>1.00</td>
+            <td>100.00</td>
+          </tr>
+          <tr>
+            <td colspan="3"><center>Subtotal</center></td>
+            <td>110.00</td>
+            
+          </tr>
+          <tr>
+            <td colspan="2"><center>Tax</center></td>
+            <td>8%</td>
+            <td>8.80</td>
+          </tr>
+          <tr>
+            <td colspan="3"><center>Grand Test</center></td>
+            <td>118.80</td>
+          </tr>
+
+
+
+    </table>
+</body>
 </html>
